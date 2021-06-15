@@ -5,6 +5,7 @@ const geocode = require('./utilites/geocode')
 const weather = require('./utilites/weather');
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 //define paths for express config
 const publicdirpath = path.join(__dirname,'./public');
@@ -89,7 +90,7 @@ res.render('404',{
 });
 });
 
-let PORT = 3000;
-app.listen(PORT , () => {
-console.log('server is running at number '+ PORT);
+
+app.listen(port , () => {
+console.log('server is running at number '+ port);
 });
