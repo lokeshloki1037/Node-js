@@ -8,7 +8,7 @@ request({url:weather_url, json:true} ,(err ,{body} ={}) => {
     }else if(body.current.err){
         response('please enter the correct address',undefined);
     }else{
-        response(undefined,"it is now "+body.current.weather_descriptions[0]+". it is current temperature is "+body.current.temperature+". degrees.It fellslike "+body.current.feelslike+" degrees out");
+        response(undefined,"it is now "+body.current.temperature+" degress temperature. it fells like "+body.current.feelslike+" degrees outside and humidity is "+body.current.weather_description.humidity+" degrees out");
     }
 });
 }
