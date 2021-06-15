@@ -1,5 +1,3 @@
-console.log('this is a client side object');
-
 
 const weatherfrom = document.querySelector('form');
 const search = document.querySelector('input');
